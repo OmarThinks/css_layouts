@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4-1) Float Example</title>
+<style type="text/css">
+
+body{
+	margin:0px;
+	background-color: #d1d1d1 ;
+}
+
+
+.header
+{
+font-size: 30px;
+font-weight: bold;
+font-family: Arial;
+background-color:#63db42 ;
+margin: 0px;
+padding: 0px;
+outline: 0px;
+}
+
+
+.nav_and_main
+{
+	width: 100%;
+	background-color: yellow;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+main
+{
+	background-color: magenta;float: left;
+	width: auto;
+	display: block;
+	width: 75%;
+
+}
+nav
+{
+	float: left;
+	background-color: blue;
+	width:25%;
+	height: 100%;
+}
+.side_bar
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+}
+
+
+.side_bar_element
+{
+	background-color: green;
+	margin: 5px;
+}
+
+.side_bar_element:hover
+{
+	background-color: lime;
+}
+
+footer
+{
+	background-color: red;
+	text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+<div class="header">This is the Header</div>
+
+<div class="nav_and_main">
+
+<nav>
+	<ul class="side_bar">
+		<li class="side_bar_element">Element 1</li>
+		<li class="side_bar_element">Element 2</li>
+		<li class="side_bar_element">Element 3</li>
+	</ul>
+</nav>
+<main>
+	<h1>Title</h1>
+	<p>This is the main body</p>
+</main>
+
+</div>
+<footer>This is the footer</footer>
+
+</body>
+</html>
