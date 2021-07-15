@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop Down</title>
+<style type="text/css">
+
+body
+{
+	margin: 0px;
+	background-color: white;
+}
+
+.custom_text
+{
+	border: solid 3px red;
+	padding: 1em;
+	font-size: 1.6em;	
+}
+
+.dropdown
+{
+  position: relative;
+  display: block;
+  background-color: yellow;
+}
+
+
+
+
+.dropdown_source
+{
+	margin: 0px;
+}
+
+.dropdown_content
+{
+	display: none; /*block none*/
+	position: absolute;
+	margin: 0px;
+	background-color: blue;
+	opacity: 0.8;
+}
+
+
+.dropdown:hover .dropdown_content
+{
+	display: block;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="dropdown">
+
+<p class="custom_text dropdown_source">
+	Hover Here
+</p>
+<div class="custom_text dropdown_content">Now You See Me</div>
+<p>The rest of the content</p>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
