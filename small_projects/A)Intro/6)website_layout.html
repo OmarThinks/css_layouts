@@ -27,6 +27,34 @@ header
 
 
 
+nav
+{
+	display: block;
+	background: #545454;
+	padding: 0px;
+	overflow: hidden;
+}
+.nav_list
+{
+	list-style: none;
+	list-style-position: inside;
+	padding: 0px;
+	margin: 0px;
+}
+
+.nav_element
+{
+	display: inline;
+	float: left;
+	padding: 7px;
+	font-size: 1.5em;
+	color: #e0e0e0;
+}
+.nav_element:hover
+{
+	color: black;
+	background-color: white;
+}
 
 
 
@@ -45,6 +73,15 @@ The Header
 
 
 
+
+<nav>
+	<ul class="nav_list">
+		<li class="nav_element">Home</li>
+		<li class="nav_element">Products</li>
+		<li class="nav_element">Orders</li>
+		<li class="nav_element" style="float: right;">Login</li>
+	</ul>
+</nav>
 
 
 
