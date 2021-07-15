@@ -4,10 +4,15 @@
 	<title>Website Layout Example</title>
 <style type="text/css">
 
+* {
+  box-sizing: border-box;
+}
+
 body
 {
 	margin: 0px;
 	background-color: #b5b5b5;
+	padding: 10px;
 }
 
 
@@ -17,7 +22,6 @@ header
 	text-align: center; 
 	font-family: Sans-serif;
 	background-color: white;
-	margin: 10px;
 	padding-top: 15px;
 }
 
@@ -57,6 +61,58 @@ nav
 }
 
 
+
+
+
+
+
+main
+{
+	display: block;
+	background: #b5b5b5;
+	width: 100%;
+	overflow: hidden;
+	margin: 10px 0px;
+}
+
+.col-1
+{
+	width: 75%;
+	float: left;
+}
+.col-2
+{
+	width: 25%;
+	float: left;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.card
+{
+	width: 100%;
+	display: block;
+	position: static;
+	padding: 10px;
+	background-color: white;
+}
+
+
+
+
+
+footer
+{
+	display: block;
+}
 
 </style>
 
@@ -98,9 +154,38 @@ The Header
 
 </header>
 <main>
-	<div class="col-1">Column 1</div>
-	<div class="col-2">Column 2</div>
+	<div class="col-1">
+
+
+<div class="col-1-card">
+
+	<div class="card">
+		This is a card
+		<br>Hey Guys
+	</div>
+
+</div>
+</div>
+
+
+
+
+	<div class="col-2">
+<div class="col-2-card">
+	<div class="card">
+		This is a card
+		<br>
+		What up
+		<br>
+		I am a card
+	</div>
+</div>		
+
+	</div>
 </main>
+
+
+
 <footer>This is the Footer</footer>
 
 
