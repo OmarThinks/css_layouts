@@ -3,6 +3,13 @@
 <head>
 	<title>2) Columns</title>
 <style type="text/css">
+
+:root
+{
+	--my_color:red;
+}
+
+
 .divided {
   column-count: 3;
   text-align: center;
@@ -11,9 +18,17 @@
   column-gap: 10px;
 }
 
-.first_one{background-color: red;}
+.first_one{background-color: red; display: inline-block;}
 .second_one{background-color: blue;}
 .third_one{background-color: yellow;}
+
+
+
+.var_test_1
+{
+	background-color: var(--my_color);
+}
+
 
 </style>
 
@@ -21,9 +36,18 @@
 <body>
 
 <div class="divided">
-	<p class="first_one">I am one</p>
+	<span class="first_one">I am one</span>
 	<p class="second_one">I am two</p>
 	<p class="third_one">I am three</p>
+</div>
+
+
+
+
+
+
+<div class="var_test_1">
+	I am a div
 </div>
 
 
