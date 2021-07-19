@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6) Grid</title>
+<style type="text/css">
+
+*{
+	box-sizing: border-box;
+	border: solid 1px black;
+	padding: 0px; margin: 0px;
+	text-align: center;
+	vertical-align: middle;
+}	
+
+
+p,h1{border: none;}
+
+
+html, body
+{
+	margin: 0px; padding: 0px;
+	width: 100%; height: 100%;
+	background-color: grey;
+	border: none;
+}
+
+
+
+
+header{background-color: magenta; grid-area: header;}
+nav{background-color: yellow; grid-area: nav;}
+main{background-color: pink; grid-area: main;}
+footer{background-color: cyan; grid-area: footer;}
+
+
+
+body
+{
+	display: grid;
+	grid-template-areas:
+    	'header header'
+    	'nav main'
+    	'nav footer';
+	grid-gap: 0px 0px;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 100px auto 100px;
+}
+
+
+
+</style>
+
+</head>
+<body class="main_grid">
+
+
+<header>
+	<h1>
+		This is header
+	</h1>
+</header>
+
+
+<nav>
+<p>
+This is nav
+</p>
+</nav>
+
+<main><p>This is main</p>
+<p>This is still main</p>
+</main>
+
+<footer><p>This is footer</p></footer>
+
+</body>
+</html>
